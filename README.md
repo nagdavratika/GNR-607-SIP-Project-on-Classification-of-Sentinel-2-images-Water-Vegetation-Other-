@@ -12,7 +12,7 @@ This tool uses a hybrid approach combining spectral indices (NDVI/NDWI), K-Means
 * **Automated Band Detection:** Automatically finds Red, Green, NIR, and SWIR bands regardless of file naming conventions.
 * **Hybrid Classification Engine:**
     * **Physics-Based:** Uses NDVI/NDWI thresholds for high-confidence pixels.
-    * **AI-Based:** Uses K-Means Clustering (Unsupervised Learning) to resolve ambiguous pixels (e.g., wet soil vs. muddy water).
+    * **AI-Based:** Uses K-Means (K=2) Clustering (Unsupervised Learning) to resolve ambiguous pixels (e.g., wet soil vs. muddy water).
 * **Advanced Noise Removal:** Implements a spatial Sieve filter to remove "salt-and-pepper" noise (isolated soil pixels mimic water).
 * **Turbidity Handling:** Calibrated thresholds (`NDVI < 0.20`) allow for the correct classification of sediment-heavy rivers that normally get misclassified as vegetation.
 * **Thematic Change Detection:** Automatically generates a change map highlighting Water Gain/Loss and Vegetation Gain/Loss between the first and last timestamp.
